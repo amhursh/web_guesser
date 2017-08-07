@@ -1,5 +1,25 @@
 <html>
-  <head></head>
+  <head>
+    <% if message == "Way Too high!" || message == "Way Too low!" %>
+    <style>
+      body {
+        background: #f3172d;
+      }
+    </style>
+    <% elsif message == "Too high!" || message == "Too low!" %>
+    <style>
+      body {
+        background: #FF6347;
+      }
+    </style>
+    <% elsif message == "You got it right!" %>
+    <style>
+      body {
+        background: #008000;
+      }
+    </style>
+    <% end %>
+  </head>
   <body>
     <p>
       Please guess a number between 1-100:

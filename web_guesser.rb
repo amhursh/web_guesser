@@ -4,6 +4,7 @@ require 'sinatra/reloader'
 RAND_NUM = rand(101)
 
 def check_guess(guess)
+  counter_incrementor
   if guess == 0
     "By the way..."
   elsif guess > RAND_NUM && (guess - RAND_NUM) > 5
